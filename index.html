@@ -174,11 +174,6 @@
     color: #fff;
     box-shadow: 0 4px 18px rgba(34,197,94,.3);
   }
-  .btn-orange {
-    background: linear-gradient(135deg, #f97316, #ea580c);
-    color: #fff;
-    box-shadow: 0 4px 18px rgba(249,115,22,.3);
-  }
   .btn-sm { padding: 11px 20px; font-size: .9rem; border-radius: var(--radius-sm); }
 
   /* ── FORM ELEMENTS ──────────────── */
@@ -234,10 +229,10 @@
     padding: 3px 10px; border-radius: 99px;
     font-family: var(--font-main); font-weight: 700; font-size: .78rem;
   }
-  .badge-blue { background: var(--blue-pale); color: var(--blue-deep); }
-  .badge-green { background: #dcfce7; color: #166534; }
+  .badge-blue   { background: var(--blue-pale); color: var(--blue-deep); }
+  .badge-green  { background: #dcfce7; color: #166534; }
   .badge-orange { background: #ffedd5; color: #9a3412; }
-  .badge-red { background: #fee2e2; color: #991b1b; }
+  .badge-red    { background: #fee2e2; color: #991b1b; }
 
   /* ── RIPPLE ─────────────────────── */
   .ripple {
@@ -276,22 +271,15 @@
   }
   @keyframes logo-float {
     0%,100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    50%      { transform: translateY(-10px); }
   }
   .splash-logo svg { width: 60px; height: 60px; }
   .splash h1 { color: #fff; font-size: 2.6rem; margin-bottom: 12px; }
   .splash-tag { color: rgba(255,255,255,.8); font-size: 1.15rem; margin-bottom: 56px; font-family: var(--font-main); font-weight: 600; }
-  .splash .btn-primary {
-    background: #fff; color: var(--blue-deep);
-    box-shadow: 0 8px 32px rgba(0,0,0,.22);
-    font-size: 1.1rem;
-  }
+  .splash .btn-primary { background: #fff; color: var(--blue-deep); box-shadow: 0 8px 32px rgba(0,0,0,.22); font-size: 1.1rem; }
   .splash .btn-primary:hover { background: #f0f9ff; }
   .splash-dots { display: flex; gap: 8px; margin-top: 40px; justify-content: center; }
-  .splash-dots span {
-    width: 8px; height: 8px; border-radius: 99px; background: rgba(255,255,255,.4);
-    transition: var(--transition);
-  }
+  .splash-dots span { width: 8px; height: 8px; border-radius: 99px; background: rgba(255,255,255,.4); transition: var(--transition); }
   .splash-dots span.a { background: #fff; width: 24px; }
 
   /* ══════════════════════════════════
@@ -300,11 +288,10 @@
   #login { padding-bottom: 80px; }
   .login-header {
     background: linear-gradient(135deg, var(--blue-deep), var(--blue-mid));
-    padding: 48px 32px 36px;
-    text-align: center;
+    padding: 48px 32px 36px; text-align: center;
   }
   .login-header h2 { color: #fff; font-size: 1.9rem; }
-  .login-header p { color: rgba(255,255,255,.75); margin-top: 6px; font-size: 1rem; }
+  .login-header p  { color: rgba(255,255,255,.75); margin-top: 6px; font-size: 1rem; }
   .login-body { padding: 28px 24px; display: flex; flex-direction: column; gap: 20px; }
   .tabs {
     display: grid; grid-template-columns: 1fr 1fr; gap: 4px;
@@ -313,23 +300,19 @@
   .tab-btn {
     padding: 12px; border: none; border-radius: 8px; cursor: pointer;
     font-family: var(--font-main); font-weight: 700; font-size: .95rem;
-    background: transparent; color: var(--gray-400);
-    transition: var(--transition);
+    background: transparent; color: var(--gray-400); transition: var(--transition);
   }
   .tab-btn.active { background: var(--white); color: var(--blue-mid); box-shadow: var(--shadow-sm); }
   .forgot {
     text-align: right; color: var(--blue-mid); font-family: var(--font-main);
-    font-weight: 700; font-size: .9rem; cursor: pointer;
-    transition: var(--transition);
+    font-weight: 700; font-size: .9rem; cursor: pointer; transition: var(--transition);
   }
   .forgot:hover { color: var(--blue-deep); }
   .or-divider {
     display: flex; align-items: center; gap: 12px; color: var(--gray-400);
     font-size: .85rem; font-family: var(--font-main);
   }
-  .or-divider::before, .or-divider::after {
-    content: ''; flex: 1; height: 1px; background: var(--gray-200);
-  }
+  .or-divider::before, .or-divider::after { content: ''; flex: 1; height: 1px; background: var(--gray-200); }
 
   /* ══════════════════════════════════
      SCREEN 3 — DASHBOARD
@@ -337,30 +320,14 @@
   #dashboard { padding-bottom: 80px; }
   .dash-hero {
     background: linear-gradient(135deg, var(--blue-deep), var(--blue-mid));
-    padding: 28px 24px 36px;
-    position: relative; overflow: hidden;
+    padding: 28px 24px 36px; position: relative; overflow: hidden;
   }
-  .dash-hero::after {
-    content: '';
-    position: absolute; right: -30px; top: -30px;
-    width: 180px; height: 180px;
-    border-radius: 50%; background: rgba(255,255,255,.06);
-  }
-  .dash-hero::before {
-    content: '';
-    position: absolute; right: 40px; bottom: -50px;
-    width: 120px; height: 120px;
-    border-radius: 50%; background: rgba(255,255,255,.06);
-  }
+  .dash-hero::after  { content: ''; position: absolute; right: -30px; top: -30px; width: 180px; height: 180px; border-radius: 50%; background: rgba(255,255,255,.06); }
+  .dash-hero::before { content: ''; position: absolute; right: 40px; bottom: -50px; width: 120px; height: 120px; border-radius: 50%; background: rgba(255,255,255,.06); }
   .dash-greeting { color: rgba(255,255,255,.75); font-size: .95rem; font-family: var(--font-main); font-weight: 600; }
-  .dash-name { color: #fff; font-size: 1.8rem; font-family: var(--font-main); font-weight: 900; margin-bottom: 18px; }
-  .dash-stats {
-    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px;
-  }
-  .stat-box {
-    background: rgba(255,255,255,.15); border-radius: 14px; padding: 14px 10px;
-    text-align: center; backdrop-filter: blur(4px);
-  }
+  .dash-name     { color: #fff; font-size: 1.8rem; font-family: var(--font-main); font-weight: 900; margin-bottom: 18px; }
+  .dash-stats    { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+  .stat-box { background: rgba(255,255,255,.15); border-radius: 14px; padding: 14px 10px; text-align: center; backdrop-filter: blur(4px); }
   .stat-num { color: #fff; font-family: var(--font-main); font-weight: 900; font-size: 1.7rem; line-height: 1; }
   .stat-lbl { color: rgba(255,255,255,.7); font-size: .72rem; font-family: var(--font-main); font-weight: 700; margin-top: 2px; }
   .dash-body { padding: 20px 20px 8px; display: flex; flex-direction: column; gap: 20px; }
@@ -379,7 +346,7 @@
     box-shadow: 0 6px 24px rgba(37,99,235,.4);
     transition: var(--transition); z-index: 50;
   }
-  .add-fab:hover { transform: scale(1.1) rotate(90deg); }
+  .add-fab:hover  { transform: scale(1.1) rotate(90deg); }
   .add-fab:active { transform: scale(.95); }
 
   /* Medicine card */
@@ -391,22 +358,23 @@
     transition: var(--transition); margin-bottom: 10px;
   }
   .med-card:hover { box-shadow: var(--shadow-md); transform: translateX(3px); }
+  .med-card.taken { border-color: #bbf7d0; background: #f0fdf4; }
   .med-icon {
     width: 52px; height: 52px; border-radius: 14px;
-    display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
   }
-  .med-icon.blue { background: var(--blue-pale); }
-  .med-icon.green { background: #dcfce7; }
+  /* FIX: Added all color classes */
+  .med-icon.blue   { background: var(--blue-pale); }
+  .med-icon.green  { background: #dcfce7; }
   .med-icon.orange { background: #ffedd5; }
+  .med-icon.pink   { background: #fce7f3; }
+  .med-icon.purple { background: #f3e8ff; }
+  .med-icon.red    { background: #fee2e2; }
   .med-icon svg { width: 26px; height: 26px; }
   .med-info { flex: 1; }
   .med-name { font-family: var(--font-main); font-weight: 800; font-size: 1rem; color: var(--gray-800); }
-  .med-sub { font-size: .85rem; color: var(--gray-400); margin-top: 2px; }
-  .med-time {
-    font-family: var(--font-main); font-weight: 800; font-size: .95rem; color: var(--blue-mid);
-    text-align: right; white-space: nowrap;
-  }
+  .med-sub  { font-size: .85rem; color: var(--gray-400); margin-top: 2px; }
+  .med-time { font-family: var(--font-main); font-weight: 800; font-size: .95rem; color: var(--blue-mid); text-align: right; white-space: nowrap; }
   .med-time span { display: block; font-weight: 400; font-size: .75rem; color: var(--gray-400); }
   .med-delete-btn {
     background: none; border: none; cursor: pointer;
@@ -415,10 +383,7 @@
   }
   .med-delete-btn:hover { color: var(--red); background: #fee2e2; }
 
-  .empty-state {
-    text-align: center; padding: 32px 20px;
-    color: var(--gray-400); font-family: var(--font-main); font-weight: 600;
-  }
+  .empty-state { text-align: center; padding: 32px 20px; color: var(--gray-400); font-family: var(--font-main); font-weight: 600; }
   .empty-state .emoji { font-size: 2.5rem; margin-bottom: 10px; }
   .empty-state p { font-size: .95rem; }
 
@@ -438,8 +403,7 @@
   .freq-btn {
     padding: 10px 18px; border-radius: 99px; border: 2px solid var(--gray-200);
     background: transparent; cursor: pointer; font-family: var(--font-main);
-    font-weight: 700; font-size: .9rem; color: var(--gray-600);
-    transition: var(--transition);
+    font-weight: 700; font-size: .9rem; color: var(--gray-600); transition: var(--transition);
   }
   .freq-btn.active { background: var(--blue-pale); border-color: var(--blue-mid); color: var(--blue-mid); }
 
@@ -455,8 +419,7 @@
     width: 130px; height: 130px; border-radius: 50%;
     background: rgba(255,255,255,.12); display: flex; align-items: center;
     justify-content: center; margin-bottom: 28px;
-    animation: pulse-ring 2s cubic-bezier(.4,0,.6,1) infinite;
-    position: relative;
+    animation: pulse-ring 2s cubic-bezier(.4,0,.6,1) infinite; position: relative;
   }
   .reminder-icon::before {
     content: ''; position: absolute; inset: -12px; border-radius: 50%;
@@ -465,38 +428,26 @@
   }
   @keyframes pulse-ring {
     0%,100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.05); opacity: .8; }
+    50%      { transform: scale(1.05); opacity: .8; }
   }
   .reminder-icon svg { width: 64px; height: 64px; }
-  .reminder-tag { color: rgba(255,255,255,.7); font-family: var(--font-main); font-weight: 600; font-size: 1rem; margin-bottom: 6px; }
-  .reminder h2 { color: #fff; font-size: 2.1rem; margin-bottom: 8px; }
+  .reminder-tag  { color: rgba(255,255,255,.7); font-family: var(--font-main); font-weight: 600; font-size: 1rem; margin-bottom: 6px; }
+  .reminder h2   { color: #fff; font-size: 2.1rem; margin-bottom: 8px; }
   .reminder-dose { color: rgba(255,255,255,.75); font-size: 1rem; margin-bottom: 8px; }
   .reminder-time {
     color: #fff; font-family: var(--font-main); font-weight: 800; font-size: 1.4rem;
-    background: rgba(255,255,255,.15); padding: 10px 28px; border-radius: 99px;
-    margin-bottom: 40px;
+    background: rgba(255,255,255,.15); padding: 10px 28px; border-radius: 99px; margin-bottom: 40px;
   }
   .reminder-actions { width: 100%; display: flex; flex-direction: column; gap: 12px; }
-  .btn-take {
-    background: linear-gradient(135deg, #22c55e, #16a34a);
-    color: #fff; padding: 20px; font-size: 1.1rem;
-    box-shadow: 0 6px 24px rgba(22,163,74,.35);
-  }
-  .btn-snooze {
-    background: rgba(255,255,255,.15); color: #fff;
-    border: 2px solid rgba(255,255,255,.3); padding: 16px;
-    font-size: 1rem;
-  }
-  .btn-skip { background: transparent; color: rgba(255,255,255,.6); font-size: .9rem; padding: 10px; }
+  .btn-take   { background: linear-gradient(135deg, #22c55e, #16a34a); color: #fff; padding: 20px; font-size: 1.1rem; box-shadow: 0 6px 24px rgba(22,163,74,.35); }
+  .btn-snooze { background: rgba(255,255,255,.15); color: #fff; border: 2px solid rgba(255,255,255,.3); padding: 16px; font-size: 1rem; }
+  .btn-skip   { background: transparent; color: rgba(255,255,255,.6); font-size: .9rem; padding: 10px; }
 
   /* ══════════════════════════════════
      SCREEN 6 — PROFILE / SETTINGS
   ══════════════════════════════════ */
   #profile { padding-bottom: 80px; }
-  .profile-hero {
-    background: linear-gradient(135deg, var(--blue-deep), var(--blue-mid));
-    padding: 40px 24px 56px; text-align: center; position: relative;
-  }
+  .profile-hero { background: linear-gradient(135deg, var(--blue-deep), var(--blue-mid)); padding: 40px 24px 56px; text-align: center; position: relative; }
   .avatar {
     width: 90px; height: 90px; border-radius: 50%; background: rgba(255,255,255,.2);
     display: flex; align-items: center; justify-content: center; margin: 0 auto 14px;
@@ -504,67 +455,41 @@
     font-family: var(--font-main); font-weight: 900; font-size: 2rem; color: #fff;
   }
   .profile-hero h2 { color: #fff; font-size: 1.5rem; }
-  .profile-hero p { color: rgba(255,255,255,.75); font-size: .9rem; }
-  .profile-body {
-    padding: 0 20px; display: flex; flex-direction: column; gap: 6px;
-    margin-top: -20px;
-  }
-  .settings-card {
-    background: var(--white); border-radius: var(--radius);
-    box-shadow: var(--shadow-sm); border: 1.5px solid var(--gray-200);
-    overflow: hidden; margin-bottom: 4px;
-  }
-  .settings-section-title {
-    padding: 10px 18px 4px;
-    font-family: var(--font-main); font-weight: 700; font-size: .8rem;
-    color: var(--gray-400); text-transform: uppercase; letter-spacing: .06em;
-  }
-  .setting-row {
-    display: flex; align-items: center; gap: 14px; padding: 16px 18px;
-    border-bottom: 1px solid var(--gray-200); cursor: pointer;
-    transition: var(--transition);
-  }
+  .profile-hero p  { color: rgba(255,255,255,.75); font-size: .9rem; }
+  .profile-body { padding: 0 20px; display: flex; flex-direction: column; gap: 6px; margin-top: -20px; }
+  .settings-card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-sm); border: 1.5px solid var(--gray-200); overflow: hidden; margin-bottom: 4px; }
+  .settings-section-title { padding: 10px 18px 4px; font-family: var(--font-main); font-weight: 700; font-size: .8rem; color: var(--gray-400); text-transform: uppercase; letter-spacing: .06em; }
+  .setting-row { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-bottom: 1px solid var(--gray-200); cursor: pointer; transition: var(--transition); }
   .setting-row:last-child { border-bottom: none; }
   .setting-row:hover { background: var(--gray-50); }
-  .setting-icon {
-    width: 42px; height: 42px; border-radius: 12px;
-    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-  }
-  .setting-icon.blue { background: var(--blue-pale); }
-  .setting-icon.green { background: #dcfce7; }
+  .setting-icon { width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .setting-icon.blue   { background: var(--blue-pale); }
+  .setting-icon.green  { background: #dcfce7; }
   .setting-icon.purple { background: #f3e8ff; }
   .setting-icon.orange { background: #ffedd5; }
-  .setting-icon.red { background: #fee2e2; }
+  .setting-icon.red    { background: #fee2e2; }
   .setting-icon svg { width: 20px; height: 20px; }
   .setting-info { flex: 1; }
   .setting-label { font-family: var(--font-main); font-weight: 700; font-size: .97rem; color: var(--gray-800); }
-  .setting-sub { font-size: .82rem; color: var(--gray-400); margin-top: 2px; }
+  .setting-sub   { font-size: .82rem; color: var(--gray-400); margin-top: 2px; }
 
   /* Toggle */
-  .toggle {
-    width: 50px; height: 28px; background: var(--gray-200); border-radius: 99px;
-    position: relative; cursor: pointer; transition: var(--transition);
-    flex-shrink: 0;
-  }
+  .toggle { width: 50px; height: 28px; background: var(--gray-200); border-radius: 99px; position: relative; cursor: pointer; transition: var(--transition); flex-shrink: 0; }
   .toggle.on { background: var(--blue-mid); }
-  .toggle::after {
-    content: ''; position: absolute; top: 3px; left: 3px;
-    width: 22px; height: 22px; background: #fff; border-radius: 50%;
-    transition: var(--transition); box-shadow: 0 2px 6px rgba(0,0,0,.2);
-  }
+  .toggle::after { content: ''; position: absolute; top: 3px; left: 3px; width: 22px; height: 22px; background: #fff; border-radius: 50%; transition: var(--transition); box-shadow: 0 2px 6px rgba(0,0,0,.2); }
   .toggle.on::after { transform: translateX(22px); }
 
   /* ── FONT SIZE ACCESSIBILITY ─────── */
   body.large-font { font-size: 20px; }
   body.large-font .btn { font-size: 1.15rem; padding: 19px 24px; }
-  body.large-font h2 { font-size: 1.65rem; }
+  body.large-font h2  { font-size: 1.65rem; }
 
-  /* ── ANIMATION ──────────────────── */
+  /* ── ANIMATIONS ─────────────────── */
   @keyframes slide-up {
     from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    to   { opacity: 1; transform: translateY(0); }
   }
-  .anim-in { animation: slide-up .4s ease both; }
+  .anim-in   { animation: slide-up .4s ease both; }
   .anim-in-2 { animation: slide-up .4s ease .1s both; }
   .anim-in-3 { animation: slide-up .4s ease .2s both; }
   .anim-in-4 { animation: slide-up .4s ease .3s both; }
@@ -584,10 +509,7 @@
 
   /* ── RESPONSIVE ─────────────────── */
   @media (min-width: 500px) {
-    .shell {
-      margin: 20px auto; min-height: calc(100dvh - 40px);
-      border-radius: 32px;
-    }
+    .shell { margin: 20px auto; min-height: calc(100dvh - 40px); border-radius: 32px; }
     .bottom-nav { border-radius: 0 0 32px 32px; }
     .add-fab { right: calc(50% - 210px); }
   }
@@ -598,9 +520,6 @@
 <!-- ── TOAST ──────────────────────── -->
 <div id="toast"></div>
 
-<!-- ══════════════════════════════════
-     PHONE SHELL
-══════════════════════════════════ -->
 <div class="shell">
 
   <!-- ── SCREEN 1: SPLASH ─────────── -->
@@ -619,9 +538,7 @@
       <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       Get Started
     </button>
-    <div class="splash-dots" style="margin-top:40px;">
-      <span class="a"></span><span></span><span></span>
-    </div>
+    <div class="splash-dots" style="margin-top:40px;"><span class="a"></span><span></span><span></span></div>
     <p style="color:rgba(255,255,255,.5);font-size:.8rem;margin-top:auto;padding-bottom:24px;font-family:var(--font-main);">Your personal health companion</p>
   </div>
 
@@ -697,32 +614,19 @@
       <div class="dash-greeting" id="dash-greeting">Good Morning ☀️</div>
       <div class="dash-name" id="dash-name">Welcome!</div>
       <div class="dash-stats">
-        <div class="stat-box">
-          <div class="stat-num" id="stat-total">0</div>
-          <div class="stat-lbl">Today</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-num" id="stat-taken">0</div>
-          <div class="stat-lbl">Taken</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-num">💊</div>
-          <div class="stat-lbl">Streak</div>
-        </div>
+        <div class="stat-box"><div class="stat-num" id="stat-total">0</div><div class="stat-lbl">Today</div></div>
+        <div class="stat-box"><div class="stat-num" id="stat-taken">0</div><div class="stat-lbl">Taken</div></div>
+        <div class="stat-box"><div class="stat-num" id="stat-pending">0</div><div class="stat-lbl">Pending</div></div>
       </div>
     </div>
     <div class="dash-body">
-      <!-- Today's Medicines -->
       <div class="anim-in">
         <div class="section-title">
           💊 Today's Medicines
           <span class="see-all" onclick="showToast('Showing all medicines')">See All</span>
         </div>
-        <!-- Medicine cards rendered dynamically by loadMedicines() -->
         <div id="med-list"></div>
       </div>
-
-      <!-- Quick Add -->
       <div class="anim-in-3">
         <button class="btn btn-primary" onclick="goTo('addmed'); rippleEffect(event)">
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
@@ -730,8 +634,6 @@
         </button>
       </div>
     </div>
-
-    <!-- FAB Add Button -->
     <button class="add-fab" onclick="goTo('addmed'); rippleEffect(event)" title="Add Medicine">
       <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
     </button>
@@ -752,21 +654,19 @@
         <label>💊 Medicine Name</label>
         <input type="text" id="medName" placeholder="e.g. Metformin 500mg"/>
       </div>
-
       <div class="form-group anim-in-2">
         <label>🎨 Pill Color</label>
         <div class="color-picker">
           <div class="color-dot selected" style="background:#3b82f6;" onclick="selectColor(this)" data-color="blue">
             <svg width="14" height="14" fill="none" stroke="white" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
           </div>
-          <div class="color-dot" style="background:#22c55e;" onclick="selectColor(this)" data-color="green"></div>
-          <div class="color-dot" style="background:#f97316;" onclick="selectColor(this)" data-color="orange"></div>
-          <div class="color-dot" style="background:#ec4899;" onclick="selectColor(this)" data-color="pink"></div>
-          <div class="color-dot" style="background:#a855f7;" onclick="selectColor(this)" data-color="purple"></div>
-          <div class="color-dot" style="background:#ef4444;" onclick="selectColor(this)" data-color="red"></div>
+          <div class="color-dot" style="background:#22c55e;"  onclick="selectColor(this)" data-color="green"></div>
+          <div class="color-dot" style="background:#f97316;"  onclick="selectColor(this)" data-color="orange"></div>
+          <div class="color-dot" style="background:#ec4899;"  onclick="selectColor(this)" data-color="pink"></div>
+          <div class="color-dot" style="background:#a855f7;"  onclick="selectColor(this)" data-color="purple"></div>
+          <div class="color-dot" style="background:#ef4444;"  onclick="selectColor(this)" data-color="red"></div>
         </div>
       </div>
-
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;" class="anim-in-2">
         <div class="form-group">
           <label>💉 Dosage</label>
@@ -777,12 +677,10 @@
           <input type="number" id="medQty" placeholder="1" min="1" max="10"/>
         </div>
       </div>
-
       <div class="form-group anim-in-3">
         <label>⏰ Reminder Time</label>
         <input type="time" id="medTime" value="08:00"/>
       </div>
-
       <div class="form-group anim-in-3">
         <label>🍽️ When to Take</label>
         <select id="medWhen">
@@ -795,7 +693,6 @@
           <option>Bedtime</option>
         </select>
       </div>
-
       <div class="form-group anim-in-3">
         <label>📅 Frequency</label>
         <div class="freq-btns">
@@ -805,12 +702,10 @@
           <button class="freq-btn" onclick="toggleFreq(this)">Custom</button>
         </div>
       </div>
-
       <div class="form-group anim-in-4">
         <label>📝 Notes (optional)</label>
         <input type="text" id="medNotes" placeholder="e.g. Take with water"/>
       </div>
-
       <div class="anim-in-4" style="display:flex;flex-direction:column;gap:10px;">
         <button class="btn btn-primary" onclick="saveMedicine(event)">
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
@@ -833,7 +728,6 @@
     <h2 id="reminder-med-name">Medicine Name</h2>
     <div class="reminder-dose" id="reminder-med-dose">💊 1 Tablet</div>
     <div class="reminder-time" id="reminder-med-time">🕐 00:00</div>
-
     <div class="reminder-actions">
       <button class="btn btn-take" onclick="takeMed(event)">
         <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
@@ -855,117 +749,66 @@
       <p id="profile-email">Not logged in</p>
     </div>
     <div class="profile-body">
-
-      <!-- Health Info -->
       <p class="settings-section-title">Health Information</p>
       <div class="settings-card">
         <div class="setting-row" onclick="showToast('Edit health profile')">
-          <div class="setting-icon blue">
-            <svg width="20" height="20" fill="none" stroke="#2563eb" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-          </div>
-          <div class="setting-info">
-            <div class="setting-label">Health Conditions</div>
-            <div class="setting-sub">Tap to add health info</div>
-          </div>
+          <div class="setting-icon blue"><svg width="20" height="20" fill="none" stroke="#2563eb" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+          <div class="setting-info"><div class="setting-label">Health Conditions</div><div class="setting-sub">Tap to add health info</div></div>
           <svg width="16" height="16" fill="none" stroke="var(--gray-400)" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
         </div>
         <div class="setting-row" onclick="showToast('Edit doctor details')">
-          <div class="setting-icon green">
-            <svg width="20" height="20" fill="none" stroke="#22c55e" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8z"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-          </div>
-          <div class="setting-info">
-            <div class="setting-label">My Doctor</div>
-            <div class="setting-sub">Tap to add doctor info</div>
-          </div>
+          <div class="setting-icon green"><svg width="20" height="20" fill="none" stroke="#22c55e" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8z"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <div class="setting-info"><div class="setting-label">My Doctor</div><div class="setting-sub">Tap to add doctor info</div></div>
           <svg width="16" height="16" fill="none" stroke="var(--gray-400)" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
         </div>
       </div>
 
-      <!-- Notifications -->
       <p class="settings-section-title">Notifications</p>
       <div class="settings-card">
         <div class="setting-row">
-          <div class="setting-icon blue">
-            <svg width="20" height="20" fill="none" stroke="#2563eb" stroke-width="2" viewBox="0 0 24 24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg>
-          </div>
-          <div class="setting-info">
-            <div class="setting-label">Medicine Reminders</div>
-            <div class="setting-sub">On time alerts for doses</div>
-          </div>
+          <div class="setting-icon blue"><svg width="20" height="20" fill="none" stroke="#2563eb" stroke-width="2" viewBox="0 0 24 24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg></div>
+          <div class="setting-info"><div class="setting-label">Medicine Reminders</div><div class="setting-sub">On time alerts for doses</div></div>
           <div class="toggle on" onclick="toggleSwitch(this)"></div>
         </div>
         <div class="setting-row">
-          <div class="setting-icon orange">
-            <svg width="20" height="20" fill="none" stroke="#f97316" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div class="setting-info">
-            <div class="setting-label">Refill Reminder</div>
-            <div class="setting-sub">Alert when stock is low</div>
-          </div>
+          <div class="setting-icon orange"><svg width="20" height="20" fill="none" stroke="#f97316" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div class="setting-info"><div class="setting-label">Refill Reminder</div><div class="setting-sub">Alert when stock is low</div></div>
           <div class="toggle on" onclick="toggleSwitch(this)"></div>
         </div>
         <div class="setting-row">
-          <div class="setting-icon green">
-            <svg width="20" height="20" fill="none" stroke="#22c55e" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          </div>
-          <div class="setting-info">
-            <div class="setting-label">Weekly Report</div>
-            <div class="setting-sub">Medication adherence summary</div>
-          </div>
+          <div class="setting-icon green"><svg width="20" height="20" fill="none" stroke="#22c55e" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <div class="setting-info"><div class="setting-label">Weekly Report</div><div class="setting-sub">Medication adherence summary</div></div>
           <div class="toggle" onclick="toggleSwitch(this)"></div>
         </div>
       </div>
 
-      <!-- Accessibility -->
       <p class="settings-section-title">Accessibility</p>
       <div class="settings-card">
         <div class="setting-row" onclick="toggleDark()">
-          <div class="setting-icon" style="background:#1e293b;">
-            <svg width="20" height="20" fill="none" stroke="#94a3b8" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-          </div>
-          <div class="setting-info">
-            <div class="setting-label">Dark Mode</div>
-            <div class="setting-sub">Easier on eyes at night</div>
-          </div>
+          <div class="setting-icon" style="background:#1e293b;"><svg width="20" height="20" fill="none" stroke="#94a3b8" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></div>
+          <div class="setting-info"><div class="setting-label">Dark Mode</div><div class="setting-sub">Easier on eyes at night</div></div>
           <div class="toggle" id="dark-toggle" onclick="event.stopPropagation(); toggleDark()"></div>
         </div>
         <div class="setting-row" onclick="toggleLargeFont()">
-          <div class="setting-icon purple">
-            <svg width="20" height="20" fill="none" stroke="#a855f7" stroke-width="2" viewBox="0 0 24 24"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
-          </div>
-          <div class="setting-info">
-            <div class="setting-label">Large Text</div>
-            <div class="setting-sub">Bigger fonts for readability</div>
-          </div>
+          <div class="setting-icon purple"><svg width="20" height="20" fill="none" stroke="#a855f7" stroke-width="2" viewBox="0 0 24 24"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg></div>
+          <div class="setting-info"><div class="setting-label">Large Text</div><div class="setting-sub">Bigger fonts for readability</div></div>
           <div class="toggle" id="font-toggle" onclick="event.stopPropagation(); toggleLargeFont()"></div>
         </div>
       </div>
 
-      <!-- Account -->
       <p class="settings-section-title">Account</p>
       <div class="settings-card">
         <div class="setting-row" onclick="exportData()">
-          <div class="setting-icon blue">
-            <svg width="20" height="20" fill="none" stroke="#2563eb" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
-          </div>
-          <div class="setting-info">
-            <div class="setting-label">Export Data</div>
-            <div class="setting-sub">Download your health records</div>
-          </div>
+          <div class="setting-icon blue"><svg width="20" height="20" fill="none" stroke="#2563eb" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg></div>
+          <div class="setting-info"><div class="setting-label">Export Data</div><div class="setting-sub">Download your health records</div></div>
           <svg width="16" height="16" fill="none" stroke="var(--gray-400)" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
         </div>
         <div class="setting-row" onclick="handleSignOut()">
-          <div class="setting-icon red">
-            <svg width="20" height="20" fill="none" stroke="#ef4444" stroke-width="2" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg>
-          </div>
-          <div class="setting-info">
-            <div class="setting-label" style="color:var(--red)">Sign Out</div>
-            <div class="setting-sub">Log out of your account</div>
-          </div>
+          <div class="setting-icon red"><svg width="20" height="20" fill="none" stroke="#ef4444" stroke-width="2" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg></div>
+          <div class="setting-info"><div class="setting-label" style="color:var(--red)">Sign Out</div><div class="setting-sub">Log out of your account</div></div>
           <svg width="16" height="16" fill="none" stroke="var(--gray-400)" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
         </div>
       </div>
-
       <p style="text-align:center;color:var(--gray-400);font-size:.8rem;padding:12px 0 4px;font-family:var(--font-main);">MediCare v2.1.0 · Made with ❤️ for better health</p>
     </div>
   </div>
@@ -993,35 +836,132 @@
 
 <script>
   // ══════════════════════════════════════
+  // FIX 1: Unlock AudioContext on first user interaction
+  // Required by browsers that block autoplay until a gesture occurs
+  // ══════════════════════════════════════
+  document.body.addEventListener('click', () => {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    ctx.resume();
+  }, { once: true });
+
+  // ══════════════════════════════════════
   // STATE
   // ══════════════════════════════════════
   let currentScreen = 'splash';
-  let navHistory = ['splash'];
+  let navHistory    = ['splash'];
   const noNavScreens = ['splash', 'login'];
+
+  // Tracks the med currently shown on the reminder screen (for snooze/take)
+  let currentReminderMed = null;
+  // Single snooze timeout handle so it can be cancelled on skip/take
+  let snoozeTimeout = null;
+  // Active alarm oscillator node
+  let alarmOscillator = null;
+
+  // ══════════════════════════════════════
+  // SOUND — Web Audio API beep (no external URL needed)
+  // ══════════════════════════════════════
+  function playAlarm() {
+    stopAlarm(); // ensure no double-play
+    try {
+      const ctx  = new (window.AudioContext || window.webkitAudioContext)();
+      const osc  = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.type      = 'sine';
+      osc.frequency.setValueAtTime(880, ctx.currentTime);
+      // Beep pattern: on 0.3s, off 0.2s, repeat
+      gain.gain.setValueAtTime(0, ctx.currentTime);
+      for (let i = 0; i < 5; i++) {
+        const t = ctx.currentTime + i * 0.5;
+        gain.gain.setValueAtTime(0.4, t);
+        gain.gain.setValueAtTime(0,   t + 0.3);
+      }
+      osc.start(ctx.currentTime);
+      osc.stop(ctx.currentTime + 2.5);
+      alarmOscillator = { osc, ctx };
+    } catch (e) { /* AudioContext blocked until user interaction — safe to ignore */ }
+  }
+
+  function stopAlarm() {
+    if (alarmOscillator) {
+      try { alarmOscillator.osc.stop(); alarmOscillator.ctx.close(); } catch (_) {}
+      alarmOscillator = null;
+    }
+  }
+
+  // ══════════════════════════════════════
+  // DAILY RESET — runs at midnight
+  // ══════════════════════════════════════
+  function resetDaily() {
+    const lastReset = localStorage.getItem('lastResetDate');
+    const today     = new Date().toDateString();
+    if (lastReset === today) return; // already reset today
+
+    let meds = JSON.parse(localStorage.getItem('medicines')) || [];
+    meds.forEach(m => {
+      m.triggeredToday = false;
+      m.takenToday     = false;
+    });
+    localStorage.setItem('medicines', JSON.stringify(meds));
+    localStorage.setItem('takenCount',   '0');
+    localStorage.setItem('lastResetDate', today);
+  }
+
+  // ══════════════════════════════════════
+  // REMINDER SYSTEM — single interval only
+  // ══════════════════════════════════════
+  function checkReminders() {
+    resetDaily(); // also ensures daily reset happens
+    const meds = JSON.parse(localStorage.getItem('medicines')) || [];
+    if (!meds.length) return;
+
+    const now  = new Date();
+    const hh   = String(now.getHours()).padStart(2, '0');
+    const mm   = String(now.getMinutes()).padStart(2, '0');
+    const currentTime = hh + ':' + mm;
+
+    let changed = false;
+    meds.forEach(med => {
+      if (med.time === currentTime && !med.triggeredToday) {
+        med.triggeredToday = true;
+        changed = true;
+        triggerReminder(med);
+      }
+    });
+    if (changed) localStorage.setItem('medicines', JSON.stringify(meds));
+  }
+
+  // FIX 2: Check every second so reminders fire exactly on time (not up to 59s late)
+  setInterval(checkReminders, 1000);
+
+  function triggerReminder(med) {
+    currentReminderMed = med;
+    document.getElementById('reminder-med-name').textContent = escapeText(med.name);
+    document.getElementById('reminder-med-dose').textContent = '💊 ' + (med.qty || '1') + ' Tablet' + (med.dosage ? ' · ' + med.dosage : '');
+    document.getElementById('reminder-med-time').textContent = '🕐 ' + formatTime(med.time);
+    goTo('reminder');
+    playAlarm();
+  }
 
   // ══════════════════════════════════════
   // NAVIGATION
   // ══════════════════════════════════════
   function goTo(id) {
-    const cur = document.getElementById(currentScreen);
+    const cur  = document.getElementById(currentScreen);
     const next = document.getElementById(id);
     if (!next || id === currentScreen) return;
 
-    // Slide current screen out to the left
     cur.classList.remove('active');
     cur.classList.add('slide-left');
-
-    // Slide next screen in from the right
     next.classList.remove('slide-left');
     next.classList.add('active');
-
-    // Clean up after transition
     setTimeout(() => cur.classList.remove('slide-left'), 400);
 
     navHistory.push(id);
     currentScreen = id;
 
-    // Handle nav bar visibility
     const nav = document.getElementById('bottomNav');
     if (noNavScreens.includes(id)) {
       nav.classList.add('hidden');
@@ -1030,27 +970,20 @@
       setNav(id);
     }
 
-    // Screen-specific logic on entering
-    if (id === 'dashboard') {
-      loadDashboard();
-    }
-    if (id === 'profile') {
-      loadProfile();
-    }
+    if (id === 'dashboard') loadDashboard();
+    if (id === 'profile')   loadProfile();
   }
 
   function goBack() {
     if (navHistory.length <= 1) return;
     navHistory.pop();
-    const prev = navHistory[navHistory.length - 1];
-
-    const cur = document.getElementById(currentScreen);
+    const prev   = navHistory[navHistory.length - 1];
+    const cur    = document.getElementById(currentScreen);
     const prevEl = document.getElementById(prev);
 
     cur.classList.remove('active');
     prevEl.classList.add('active');
     prevEl.classList.remove('slide-left');
-
     currentScreen = prev;
 
     const nav = document.getElementById('bottomNav');
@@ -1060,9 +993,8 @@
       nav.classList.remove('hidden');
       setNav(prev);
     }
-
     if (prev === 'dashboard') loadDashboard();
-    if (prev === 'profile') loadProfile();
+    if (prev === 'profile')   loadProfile();
   }
 
   function setNav(id) {
@@ -1072,13 +1004,13 @@
   }
 
   // ══════════════════════════════════════
-  // TABS (Login / Register)
+  // TABS
   // ══════════════════════════════════════
   function switchTab(tab) {
     const isLogin = tab === 'login';
     document.getElementById('tab-login').classList.toggle('active', isLogin);
     document.getElementById('tab-register').classList.toggle('active', !isLogin);
-    document.getElementById('form-login').style.display = isLogin ? 'flex' : 'none';
+    document.getElementById('form-login').style.display    = isLogin ? 'flex' : 'none';
     document.getElementById('form-register').style.display = isLogin ? 'none' : 'flex';
   }
 
@@ -1088,18 +1020,11 @@
   function handleLogin(event) {
     event.preventDefault();
     rippleEffect(event);
-
     const email    = document.getElementById('login-email').value.trim();
     const password = document.getElementById('login-password').value;
-
-    if (!email || !password) {
-      showToast('⚠️ Enter email & password');
-      return;
-    }
-
+    if (!email || !password) { showToast('⚠️ Enter email & password'); return; }
     const users = JSON.parse(localStorage.getItem('users')) || [];
     const user  = users.find(u => u.email === email && u.password === password);
-
     if (user) {
       localStorage.setItem('currentUser', JSON.stringify(user));
       showToast('✅ Welcome back, ' + user.name + '!');
@@ -1115,33 +1040,17 @@
   function handleRegister(event) {
     event.preventDefault();
     rippleEffect(event);
-
     const name     = document.getElementById('reg-name').value.trim();
     const email    = document.getElementById('reg-email').value.trim();
     const password = document.getElementById('reg-password').value;
-
-    if (!name || !email || !password) {
-      showToast('⚠️ Please fill all required fields');
-      return;
-    }
-    if (password.length < 6) {
-      showToast('⚠️ Password must be at least 6 characters');
-      return;
-    }
-
+    if (!name || !email || !password) { showToast('⚠️ Please fill all required fields'); return; }
+    if (password.length < 6) { showToast('⚠️ Password must be at least 6 characters'); return; }
     let users = JSON.parse(localStorage.getItem('users')) || [];
-
-    // Prevent duplicate email registration
-    if (users.find(u => u.email === email)) {
-      showToast('❌ Account with this email already exists');
-      return;
-    }
-
+    if (users.find(u => u.email === email)) { showToast('❌ Account with this email already exists'); return; }
     const newUser = { name, email, password };
     users.push(newUser);
     localStorage.setItem('users', JSON.stringify(users));
     localStorage.setItem('currentUser', JSON.stringify(newUser));
-
     showToast('✅ Account created! Welcome, ' + name + '!');
     setTimeout(() => goTo('dashboard'), 600);
   }
@@ -1150,31 +1059,28 @@
   // AUTH — SIGN OUT
   // ══════════════════════════════════════
   function handleSignOut() {
+    stopAlarm();
     localStorage.removeItem('currentUser');
     showToast('👋 Signed out successfully');
-    // Reset nav history and go to splash
-    navHistory = ['splash'];
+    navHistory    = ['splash'];
     currentScreen = 'splash';
-    document.querySelectorAll('.screen').forEach(s => {
-      s.classList.remove('active', 'slide-left');
-    });
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active', 'slide-left'));
     document.getElementById('splash').classList.add('active');
     document.getElementById('bottomNav').classList.add('hidden');
   }
 
   // ══════════════════════════════════════
-  // DASHBOARD — Load medicines & update UI
+  // DASHBOARD
   // ══════════════════════════════════════
   function loadDashboard() {
     const user = JSON.parse(localStorage.getItem('currentUser'));
     if (user) {
-      // Update greeting based on time of day
       const hour = new Date().getHours();
       let greeting = 'Good Morning ☀️';
       if (hour >= 12 && hour < 17) greeting = 'Good Afternoon 🌤️';
-      else if (hour >= 17) greeting = 'Good Evening 🌙';
+      else if (hour >= 17)         greeting = 'Good Evening 🌙';
       document.getElementById('dash-greeting').textContent = greeting;
-      document.getElementById('dash-name').textContent = user.name;
+      document.getElementById('dash-name').textContent     = user.name;
     }
     loadMedicines();
   }
@@ -1182,60 +1088,60 @@
   function loadMedicines() {
     const meds      = JSON.parse(localStorage.getItem('medicines')) || [];
     const container = document.getElementById('med-list');
-
-    // Clear existing cards before rendering (avoids duplicates)
     container.innerHTML = '';
 
     if (meds.length === 0) {
-      container.innerHTML = `
-        <div class="empty-state">
-          <div class="emoji">💊</div>
-          <p>No medicines added yet.<br>Tap "Add New Medicine" to get started!</p>
-        </div>`;
-      document.getElementById('stat-total').textContent = '0';
-      document.getElementById('stat-taken').textContent = '0';
+      container.innerHTML = `<div class="empty-state"><div class="emoji">💊</div><p>No medicines added yet.<br>Tap "Add New Medicine" to get started!</p></div>`;
+      document.getElementById('stat-total').textContent   = '0';
+      document.getElementById('stat-taken').textContent   = '0';
+      document.getElementById('stat-pending').textContent = '0';
       return;
     }
 
-    // Update stat counters
-    document.getElementById('stat-total').textContent = meds.length;
-    document.getElementById('stat-taken').textContent = '0'; // Static for demo
+    // FIX: Count taken from per-medicine flag, not a separate counter that drifts
+    const takenCount   = meds.filter(m => m.takenToday).length;
+    const pendingCount = meds.length - takenCount;
+    document.getElementById('stat-total').textContent   = meds.length;
+    document.getElementById('stat-taken').textContent   = takenCount;
+    document.getElementById('stat-pending').textContent = pendingCount;
 
-    // Color icon mapping
     const iconColors = { blue: '#2563eb', green: '#22c55e', orange: '#f97316', pink: '#ec4899', purple: '#a855f7', red: '#ef4444' };
 
     meds.forEach((med, index) => {
       const color     = med.color || 'blue';
       const iconColor = iconColors[color] || '#2563eb';
+      const isTaken   = !!med.takenToday;
       const div       = document.createElement('div');
-      div.className   = 'med-card';
+      div.className   = 'med-card' + (isTaken ? ' taken' : '');
+
+      // FIX: Status badge reflects actual per-medicine taken status
+      const statusBadge = isTaken
+        ? '<span class="badge badge-green" style="font-size:.72rem;">✅ Taken</span>'
+        : '<span class="badge badge-orange" style="font-size:.72rem;">⏰ Pending</span>';
 
       div.innerHTML = `
         <div class="med-icon ${color}">
           <svg width="26" height="26" fill="none" stroke="${iconColor}" stroke-width="2" viewBox="0 0 24 24">
             <ellipse cx="12" cy="12" rx="10" ry="10"/>
-            <line x1="12" y1="2" x2="12" y2="22" stroke="${iconColor}" stroke-width="2"/>
+            <line x1="12" y1="2" x2="12" y2="22"/>
           </svg>
         </div>
         <div class="med-info">
           <div class="med-name">${escapeHtml(med.name)}</div>
           <div class="med-sub">${escapeHtml(med.when || 'Daily')}${med.dosage ? ' · ' + escapeHtml(med.dosage) : ''}</div>
         </div>
-        <div class="med-time">${formatTime(med.time)}<span>⏰ Pending</span></div>
+        <div class="med-time">${formatTime(med.time)}<span>${statusBadge}</span></div>
         <button class="med-delete-btn" onclick="deleteMedicine(${index})" title="Delete">
           <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/>
             <path d="M10 11v6M14 11v6M9 6V4h6v2"/>
           </svg>
-        </button>
-      `;
+        </button>`;
 
-      // Clicking the card (but not delete button) shows reminder screen
       div.addEventListener('click', function(e) {
         if (e.target.closest('.med-delete-btn')) return;
         showReminderScreen(med);
       });
-
       container.appendChild(div);
     });
   }
@@ -1246,31 +1152,22 @@
   function saveMedicine(event) {
     event.preventDefault();
     rippleEffect(event);
-
     const name = document.getElementById('medName').value.trim();
     const time = document.getElementById('medTime').value;
+    if (!name) { showToast('⚠️ Please enter medicine name'); return; }
+    if (!time) { showToast('⚠️ Please set a reminder time');  return; }
 
-    if (!name) {
-      showToast('⚠️ Please enter medicine name');
-      return;
-    }
-    if (!time) {
-      showToast('⚠️ Please set a reminder time');
-      return;
-    }
-
-    // Get selected color from color picker
     const selectedDot = document.querySelector('.color-dot.selected');
     const color = selectedDot ? (selectedDot.dataset.color || 'blue') : 'blue';
 
     const med = {
-      name,
-      time,
-      color,
+      name, time, color,
       dosage: document.getElementById('medDosage').value.trim(),
       qty:    document.getElementById('medQty').value || '1',
       when:   document.getElementById('medWhen').value,
       notes:  document.getElementById('medNotes').value.trim(),
+      triggeredToday: false,
+      takenToday:     false,
       addedAt: new Date().toISOString()
     };
 
@@ -1278,12 +1175,9 @@
     meds.push(med);
     localStorage.setItem('medicines', JSON.stringify(meds));
 
-    // Reset form fields
-    document.getElementById('medName').value  = '';
-    document.getElementById('medDosage').value = '';
-    document.getElementById('medQty').value   = '';
-    document.getElementById('medTime').value  = '08:00';
-    document.getElementById('medNotes').value = '';
+    // Reset form
+    ['medName','medDosage','medQty','medNotes'].forEach(id => document.getElementById(id).value = '');
+    document.getElementById('medTime').value = '08:00';
 
     showToast('✅ Medicine saved!');
     setTimeout(() => goTo('dashboard'), 500);
@@ -1301,64 +1195,88 @@
   }
 
   // ══════════════════════════════════════
-  // REMINDER SCREEN
+  // SHOW REMINDER SCREEN (manual tap)
   // ══════════════════════════════════════
   function showReminderScreen(med) {
-    document.getElementById('reminder-med-name').textContent = med.name;
+    currentReminderMed = med;
+    document.getElementById('reminder-med-name').textContent = escapeText(med.name);
     document.getElementById('reminder-med-dose').textContent = '💊 ' + (med.qty || '1') + ' Tablet' + (med.dosage ? ' · ' + med.dosage : '');
     document.getElementById('reminder-med-time').textContent = '🕐 ' + formatTime(med.time);
     goTo('reminder');
   }
 
   // ══════════════════════════════════════
-  // REMINDER ACTIONS
+  // REMINDER ACTIONS — FIX: single correct implementations
   // ══════════════════════════════════════
   function takeMed(event) {
     rippleEffect(event);
+    stopAlarm();
+    clearTimeout(snoozeTimeout);
+
+    // FIX 3: Mark takenToday on both the in-memory ref and localStorage
+    if (currentReminderMed) {
+      currentReminderMed.takenToday = true; // update in-memory reference immediately
+
+      let meds = JSON.parse(localStorage.getItem('medicines')) || [];
+      meds.forEach(m => {
+        if (m.name === currentReminderMed.name && m.time === currentReminderMed.time) {
+          m.takenToday = true;
+        }
+      });
+      localStorage.setItem('medicines', JSON.stringify(meds));
+    }
+
+    // FIX 4: Clear reminder reference so alert page won't show stale data
+    currentReminderMed = null;
+
     showToast('✅ Great job! Medicine taken!');
-    setTimeout(() => goTo('dashboard'), 800);
+    goTo('dashboard');
+    loadDashboard(); // FIX 3: Refresh UI immediately so badge updates to ✅ Taken
   }
 
   function snoozeMed(event) {
     rippleEffect(event);
+    stopAlarm();
+    clearTimeout(snoozeTimeout); // cancel any existing snooze
+
     showToast('💤 Snoozed for 10 minutes');
-    setTimeout(() => goTo('dashboard'), 800);
+    goTo('dashboard'); // go back to dashboard while waiting
+
+    // FIX: re-trigger reminder after 10 min, only if med reference still exists
+    const snoozedMed = currentReminderMed;
+    snoozeTimeout = setTimeout(() => {
+      if (snoozedMed) triggerReminder(snoozedMed);
+    }, 10 * 60 * 1000);
   }
 
   function skipMed() {
-    showToast('⏭️ Skipped for today');
-    setTimeout(() => goTo('dashboard'), 800);
-  }
+    stopAlarm();
+    clearTimeout(snoozeTimeout);
 
-  // ══════════════════════════════════════
-  // AUTO-REMINDER: Check every minute
-  // ══════════════════════════════════════
-  function checkReminders() {
-    const meds = JSON.parse(localStorage.getItem('medicines')) || [];
-    if (meds.length === 0) return;
-
-    const now  = new Date();
-    const hh   = String(now.getHours()).padStart(2, '0');
-    const mm   = String(now.getMinutes()).padStart(2, '0');
-    const currentTime = hh + ':' + mm;
-
-    meds.forEach(med => {
-      if (med.time === currentTime) {
-        showToast('⏰ Time to take ' + med.name + '!');
+    // Mark as triggered so it won't fire again today
+    if (currentReminderMed) {
+      let meds = JSON.parse(localStorage.getItem('medicines')) || [];
+      const idx = meds.findIndex(m => m.name === currentReminderMed.name && m.time === currentReminderMed.time);
+      if (idx !== -1) {
+        meds[idx].triggeredToday = true;
+        localStorage.setItem('medicines', JSON.stringify(meds));
       }
-    });
+    }
+
+    // FIX 4: Clear reference so alert page is clean for next reminder
+    currentReminderMed = null;
+
+    showToast('⏭️ Skipped for today');
+    goTo('dashboard');
+    loadDashboard(); // Refresh badge states immediately
   }
 
-  // Check every 60 seconds
-  setInterval(checkReminders, 60000);
-
   // ══════════════════════════════════════
-  // PROFILE — Load logged-in user info
+  // PROFILE
   // ══════════════════════════════════════
   function loadProfile() {
     const user = JSON.parse(localStorage.getItem('currentUser'));
     if (!user) return;
-
     const initials = user.name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
     document.getElementById('profile-avatar').textContent = initials;
     document.getElementById('profile-name').textContent   = user.name;
@@ -1381,37 +1299,24 @@
   }
 
   // ══════════════════════════════════════
-  // COLOR PICKER
+  // UI HELPERS
   // ══════════════════════════════════════
   function selectColor(el) {
-    document.querySelectorAll('.color-dot').forEach(d => {
-      d.classList.remove('selected');
-      d.innerHTML = '';
-    });
+    document.querySelectorAll('.color-dot').forEach(d => { d.classList.remove('selected'); d.innerHTML = ''; });
     el.classList.add('selected');
     el.innerHTML = '<svg width="14" height="14" fill="none" stroke="white" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>';
   }
 
-  // ══════════════════════════════════════
-  // FREQUENCY BUTTONS
-  // ══════════════════════════════════════
   function toggleFreq(el) {
     document.querySelectorAll('.freq-btn').forEach(b => b.classList.remove('active'));
     el.classList.add('active');
   }
 
-  // ══════════════════════════════════════
-  // TOGGLE SWITCH (Notifications etc.)
-  // ══════════════════════════════════════
   function toggleSwitch(el) {
     el.classList.toggle('on');
-    const state = el.classList.contains('on') ? 'enabled' : 'disabled';
-    showToast('🔔 Notification ' + state);
+    showToast('🔔 Notification ' + (el.classList.contains('on') ? 'enabled' : 'disabled'));
   }
 
-  // ══════════════════════════════════════
-  // DARK MODE
-  // ══════════════════════════════════════
   let darkOn = false;
   function toggleDark() {
     darkOn = !darkOn;
@@ -1420,9 +1325,6 @@
     showToast(darkOn ? '🌙 Dark mode on' : '☀️ Light mode on');
   }
 
-  // ══════════════════════════════════════
-  // LARGE FONT
-  // ══════════════════════════════════════
   let largeFont = false;
   function toggleLargeFont() {
     largeFont = !largeFont;
@@ -1431,12 +1333,9 @@
     showToast(largeFont ? '🔤 Large text enabled' : '🔤 Normal text');
   }
 
-  // ══════════════════════════════════════
-  // RIPPLE EFFECT
-  // ══════════════════════════════════════
   function rippleEffect(e) {
-    const btn = e.currentTarget;
-    const r   = document.createElement('span');
+    const btn  = e.currentTarget;
+    const r    = document.createElement('span');
     r.className = 'ripple';
     const rect = btn.getBoundingClientRect();
     const size = Math.max(rect.width, rect.height);
@@ -1445,9 +1344,6 @@
     setTimeout(() => r.remove(), 600);
   }
 
-  // ══════════════════════════════════════
-  // TOAST
-  // ══════════════════════════════════════
   let toastTimer;
   function showToast(msg) {
     const t = document.getElementById('toast');
@@ -1457,38 +1353,36 @@
     toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
   }
 
-  // ══════════════════════════════════════
-  // HELPERS
-  // ══════════════════════════════════════
-
-  // Format 24h time "08:00" → "8:00 AM"
+  // Format 24h "08:00" → "8:00 AM"
   function formatTime(t) {
     if (!t) return '--:--';
     const [hStr, mStr] = t.split(':');
     let h = parseInt(hStr, 10);
-    const m   = mStr;
     const ampm = h >= 12 ? 'PM' : 'AM';
     if (h > 12) h -= 12;
     if (h === 0) h = 12;
-    return h + ':' + m + ' ' + ampm;
+    return h + ':' + mStr + ' ' + ampm;
   }
 
-  // Prevent XSS when inserting user content as HTML
+  // XSS-safe innerHTML insertion
   function escapeHtml(str) {
     if (!str) return '';
-    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
+  // XSS-safe textContent insertion (for textContent assignments)
+  function escapeText(str) { return str || ''; }
+
   // ══════════════════════════════════════
-  // INIT — Auto-login if session exists
+  // INIT — auto-login + daily reset
   // ══════════════════════════════════════
   (function init() {
+    resetDaily(); // run reset check on every page load
     const user = JSON.parse(localStorage.getItem('currentUser'));
     if (user) {
-      // Skip splash & login, go straight to dashboard
       document.getElementById('splash').classList.remove('active');
       document.getElementById('dashboard').classList.add('active');
-      navHistory = ['splash', 'dashboard'];
+      navHistory    = ['splash', 'dashboard'];
       currentScreen = 'dashboard';
       document.getElementById('bottomNav').classList.remove('hidden');
       setNav('dashboard');
